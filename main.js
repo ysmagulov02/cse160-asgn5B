@@ -340,7 +340,7 @@ function main() {
       // Camera Near and Far Plane Controls
       const minMaxGUIHelper = new MinMaxGUIHelper(camera, 'near', 'far', 0.1);
       gui.add(minMaxGUIHelper, 'min', 0.1, 50, 0.1).name('Near Plane').onChange(updateCamera);
-      gui.add(minMaxGUIHelper, 'max', 0.1, 50, 0.1).name('Far Plane').onChange(updateCamera);
+      gui.add(minMaxGUIHelper, 'max', 0.1, 1000, 0.1).name('Far Plane').onChange(updateCamera);
   
       // Camera Position Controls
       gui.add(camera.position, 'x', -100, 100).name('Position X').onChange(updateCamera);
